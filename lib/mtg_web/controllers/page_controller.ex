@@ -6,6 +6,6 @@ defmodule MtgWeb.PageController do
   end
 
   def counter(conn, _params) do
-    render(conn, :counter, layout: false)
+    render(conn |> assign(:page_title, "MtG Counter"), :counter, layout: false)
   end
 end
