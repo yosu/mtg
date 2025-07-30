@@ -147,7 +147,7 @@ function createViz(g, width, height) {
       .data(buttons)
       .join("circle")
       .attr("class", ".button-circle")
-      .attr("cx", (_d, i) => width/6+width/1.5*i)
+      .attr("cx", (_d, i) => width*0.2+width*0.6*i)
       .attr("cy", height/2)
       .attr("r", r)
       .attr("fill", "transparent")
