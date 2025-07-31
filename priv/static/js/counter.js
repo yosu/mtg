@@ -214,6 +214,7 @@ function createViz(g, width, height) {
       .attr("font-weight", "bold")
       .attr("dominant-baseline", "middle")
       .attr("text-anchor", "middle")
+      .style("user-select", "none")
 
   const updateCounter = () => {
     g.selectAll(".counter")
